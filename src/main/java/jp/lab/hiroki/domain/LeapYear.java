@@ -18,10 +18,11 @@ public class LeapYear {
      *            処理判定西暦
      * @return うるう年の場合 {@code true} そうでない場合 {@code false}
      */
-    public static boolean isLeapYear(final int year) {
-        if (year % 4 == 0) {
+    public static boolean isLeapYear(final Year year) {
+        int yearNum = year.getYear();
+        if (yearNum % 4 == 0) {
             // うるう年の例外
-            if (year % 100 == 0 && year % 400 != 0) {
+            if (yearNum % 100 == 0 && yearNum % 400 != 0) {
                 return false;
             }
             return true;

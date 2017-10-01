@@ -1,11 +1,14 @@
 package jp.lab.hiroki.domain;
 
+import lombok.Getter;
+
 /**
  * 年（西暦）クラス
  *
  * @author HIROKI
  *
  */
+@Getter
 public class Year {
 
     private final int year;
