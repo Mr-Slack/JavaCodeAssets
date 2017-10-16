@@ -24,4 +24,8 @@ public class Year {
         }
     }
 
+    public String getYearStr() {
+        return Integer.toString(year);
+    }
+
 }
